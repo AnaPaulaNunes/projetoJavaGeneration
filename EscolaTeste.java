@@ -11,8 +11,10 @@ public class EscolaTeste {
 		Staff cantina = new Staff ("Lucia Lucía", "Não-declarado", "Desconhecido", "23654789104", 56, 55556666, "Cantina", 
 			"Matutino e Noturno");
 		
-		aluno1.imprimirAluno();
-		aluno1.leiaMedia();
+			aluno1.imprimirAluno();
+			aluno1.leiaMedia();
+		
+		
 		
 
 	}

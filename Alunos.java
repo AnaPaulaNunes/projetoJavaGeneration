@@ -44,6 +44,7 @@ public class Alunos extends Escola {
 		this.turma = turma;
 	}
 	
+	
 	//Apenas uma ideia para pedirmos um input do usuário, o qual definirá as médias dos alunos e mostraremos o uso do Scanner
 	public void leiaMedia() {
 		float n1, n2, n3, n4, mediaFinal;
@@ -57,6 +58,7 @@ public class Alunos extends Escola {
 		n4 = leia.nextFloat();
 		mediaFinal = (n1+n2+n3+n4)/4;
 		System.out.println("Média Final: "+mediaFinal);
+		
 	}
 	
 	public void imprimirAluno() {
