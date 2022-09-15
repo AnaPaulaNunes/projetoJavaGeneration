@@ -6,6 +6,7 @@ public class Alunos extends Escola {
 	
 	Scanner leia = new Scanner (System.in);
 	
+	float mediaFinal;
 	private int id;
 	private int serie;
 	private String turma;
@@ -47,14 +48,14 @@ public class Alunos extends Escola {
 	
 	//Apenas uma ideia para pedirmos um input do usuário, o qual definirá as médias dos alunos e mostraremos o uso do Scanner
 	public void leiaMedia() {
-		float n1, n2, n3, n4, mediaFinal;
-		System.out.println("Qual a média deste aluno no 1º Bimestre? ");
+		float n1, n2, n3, n4;
+		System.out.println("Qual a média do(a) "+getNome()+" no 1º Bimestre? ");
 		n1 = leia.nextFloat();
-		System.out.println("Qual a média deste aluno no 2º Bimestre? ");
+		System.out.println("Qual a média do(a) "+getNome()+" no 2º Bimestre? ");
 		n2 = leia.nextFloat();
-		System.out.println("Qual a média deste aluno no 3º Bimestre? ");
+		System.out.println("Qual a média do(a) "+getNome()+" no 3º Bimestre? ");
 		n3 = leia.nextFloat();
-		System.out.println("Qual a média deste aluno no 4º Bimestre? ");
+		System.out.println("Qual a média do(a) "+getNome()+" no 4º Bimestre? ");
 		n4 = leia.nextFloat();
 		mediaFinal = (n1+n2+n3+n4)/4;
 		System.out.println("Média Final: "+mediaFinal);
@@ -63,8 +64,9 @@ public class Alunos extends Escola {
 	
 	public void imprimirAluno() {
 		System.out.println("\n****************Aluno****************");
-		System.out.println("\nNome: "+getNome()+"Gênero: "+getGenero()+"\nEndereço: "+getEndereco()+"\nCPF: "+getCpf()+"\nIdade: "
+		System.out.println("\nNome: "+getNome()+"\nGênero: "+getGenero()+"\nEndereço: "+getEndereco()+"\nCPF: "+getCpf()+"\nIdade: "
 				+getIdade()+"\nTelefone: "+getTelefone()+"\nRA: "+id+"\n"+serie+" série "+turma);
+		System.out.println("Média Final: "+mediaFinal);
 
 	}
 
