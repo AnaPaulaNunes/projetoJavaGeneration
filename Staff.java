@@ -12,6 +12,33 @@ public class Staff extends Escola {
 		this.turno = turno;
 		
 	}
+	
+	 public void sorteioDia() {
+    	
+    	int a = (int)(Math.random()*5.0);     
+    	System.out.println("\n\t\tSorteando número....");
+    	System.out.println("-----------------------------------------------------------------------------------");
+        System.out.println("\nO número escolhido foi: "+a+ ". Hoje você ficará responsável pela limpeza da(o): ");       
+                
+        switch(a) {
+        case 1:
+            System.out.println("\nPátio");
+            break;        
+        case 2:
+            System.out.println("\nCantina");
+            break;
+        case 3:
+            System.out.println("\nRefeitório");
+            break;
+        case 4:
+            System.out.println("\nSetor Financeiro");
+            break;
+        case 5:
+            System.out.println("\nSalas de Aula");
+            default:
+                System.out.println("\nSala de Diretoria/Professores");
+        }
+    }
 
 	public String getArea() {
 		return area;
